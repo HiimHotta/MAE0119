@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength{\parindent}{0in}
+
+\begin{document}
+	
+	\title{Classe 13 - MAE0119}
+	\author{Daniel Yoshio Hotta – 9922700}
+	
+	\maketitle	
+	
+		Enviado termo geral.
+	
+	\textbf {E.a.} 
+	\\ \\
+	\textit {Resposta:} \\
+    
+    Temos que calcular a probabilidade que uma família aleatória recicle dada por (FAMÍLIA QUE VÊ O PROGRAMA E RECICLA) OU  (FAMÍLIA QUE NÃO VÊ O PROGRAMA E RECICLA). A conta é dada por:
+    
+    \begin{center}
+    	$\frac{3}{20} * 90\% + \frac{17}{20} * 30\% = 0.135 + 0.255 = 0.390$
+    \end{center}
+
+    
+    \textbf {E.b.} 
+    \\ \\
+    \textit {Resposta:} \\
+    
+    Se eu acertei a questão A e denotarei a probabilidade dela por $P(A)$, então nesses 15 experimentos, queremos contar os que tiveram ao menos 1 sucesso.
+    
+    \begin{center}
+    	$\sum_{i = 1}^{15} P(y = i)$, com $P(y =i) = P(A)^i - (1-P(A))^{15 - i}$
+    \end{center}
+
+    No caso, como temos um experimento fechado. Podemos simplificar para $1 - P(y = 0)$ (fiquei em dúvida nessa suposição, mas me pareceu coerente):
+    
+    \begin{center}
+    	$1 - P(y = 0) = 1 - (1 - P(A))^{15} = 1 - (0.61)^{15}$
+    \end{center}
+    
+    \textbf {E.c.} 
+    \\ \\
+    \textit {Resposta:} \\
+    
+    A
+	
+\end{document}

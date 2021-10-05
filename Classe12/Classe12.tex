@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength{\parindent}{0in}
+
+\begin{document}
+	
+	\title{Classe 12 - MAE0119}
+	\author{Daniel Yoshio Hotta – 9922700}
+	
+	\maketitle	
+	
+		Enviado termo geral.
+	
+	\textbf {E.a.} 
+	\\ \\
+	\textit {Resposta:} \\
+    
+    Bem, a Esperança será dada pelos valores multiplicados por sua probabilidade, ou seja:
+    
+    \begin{center}
+    	$\sum_{i = 1}^{4} y_i * P(Y = y_i) = (-1.7) * 0.1 + 2.3 * 0.2 + 3.8 * 0.55 + 5.4 * 0.15 = 3.19$\\
+    \end{center}
+    
+    \textbf {E.b.} 
+    \\ \\
+    \textit {Resposta:} \\
+    
+    Usarei a fórmula alternativa da $Var(Y) = E(Y^2) - E^2(Y)$.\\
+    
+    Calculando $E(Y^2)$ de forma quase análoga ao item A (Só elevando ao quadrado os valores de y)
+    
+    \begin{center}
+    	$E(Y^2) = (-1.7)^2 * 0.1 + 2.3^2 * 0.2 + 3.8^2 * 0.55 + 5.4^2 * 0.15 = 13.663$
+    \end{center}
+
+    Logo:
+    
+    \begin{center}
+    	$Var(Y) = E(Y^2) - E^2(Y) = 13.663 - 3.19^2 = 3.4869$
+    \end{center}
+    
+    \textbf {E.c.} 
+    \\ \\
+    \textit {Resposta:} \\
+    
+    A função de distribuição acumulada de Y é dada por: \\
+    
+    $F_y(u) = P(Y \leq u), u\in \mathbb{R}$\\
+    
+    $P(Y \leq u) = $
+    $
+    \begin{cases}
+        0,   &u < -1.7\\
+        0.1, & -1.7 \leq u < 2.3\\
+        0.3, &  2.3 \leq u < 3.8\\
+        0.85,&  3.8 \leq u < 5.4\\
+        1,   &  5.4 \leq u
+    \end{cases}
+	$
+	
+\end{document}

@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+	
+	\title{Classe 17 - MAE0119}
+	\author{Daniel Yoshio Hotta – 9922700}
+	
+	\maketitle	
+	
+	Enviado termo geral.\\
+	
+	\textbf {E.a} 
+	\\ \\
+	\textit {Resposta:} \\
+    
+    Sendo $X_i = N (7.3, 1.7)$, a distribuição de cada toner, $i = {1,2,3,4}$. Queremos calcular a soma deles maior que 30, $P (X_1 + X_2 + X_3 + X_4 > 30) $. E temos um resultado para ele no caso de distribuição normal.
+    
+    \begin{center}
+    	$X_1 + X_2 + X_3 + X_4 aproxima Normal (\mu * 4, \sigma ^ 2 *4) $
+    \end{center}
+
+    $P (\frac {30 - 7.3 * 4}{1.7 * 4 })$
+
+    Cálculos...
+
+    \textbf {E.b} 
+    \\ \\
+    \textit {Resposta:} \\
+    
+    Pela aula, sabemos que $\bar{X}_4$ é:
+    
+    \begin{center}
+    	$\bar{X}_4 = \frac{X_1 + ... + X_4}{n}$
+    \end{center}
+
+    E, para o caso normal, temos:
+    
+    \begin{center}
+    	$\bar{X}_4 aproxima  N (\mu, \frac{\sigma ^2}{n})$
+    \end{center}
+
+    Portanto, a $P (\bar{X}_4 \leq 6,3)$ é:
+    
+    \begin{center}
+    	$P (\bar{X}_4 \leq 6,3) = P (Z \leq \frac{6,3 - 7,3}{1,7}) = P (Z \leq -0.58824)$
+    \end{center}
+
+    Aproximando um pouco, temos: $P(Z \leq -0.59) = 0.5 - 0.22240 = 0.27776$
+
+\end{document}

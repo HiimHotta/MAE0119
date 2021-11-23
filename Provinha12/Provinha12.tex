@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+	
+	\title{Provinha 12 - MAE0119}
+	\author{Daniel Yoshio Hotta – 9922700}
+	
+	\maketitle	
+	
+	Enviado termo geral.\\
+	
+	\textbf {E.a} 
+	\\ \\
+	\textit {Resposta:} \\
+    
+    Sendo X a variável aleatória que com distribuição Normal $N(\mu = 206.4, \sigma^2 = 45g^2)$ que representa o peso dos pacotes.\\
+    
+    Temos que calcular a probabilidade de $\bar {X} = X_1 + X_2 + X_3 + X_4 + X_5$, onde $X_i, i = {1, ..., 5}$ sao variaveis com a distribuicao acima. Sabemos pelo visto em aula que isso na verdade eh aproximado por:\\
+    
+    \begin{center}
+    	$X_5$ aproxima $Normal (\mu, \sigma ^2 / 5) $
+    \end{center}
+
+    Logo, calculando a probabilidade dos eventos acontecerem é:
+    
+    \begin{center}
+    	$P(X \leq 197$ ou $X \geq 210)$ $ = 1 - P(197 \leq X \leq 210)$\\
+    	$P(X \leq 197$ ou $X \geq 210)$ $ = 1 - P (\frac {197 - 206.4}{\sqrt{45^2/5}} \leq Z \leq \frac {210 - 206.4}{\sqrt{45^2/5}})$\\    	
+    	$P(X \leq 197$ ou $X \geq 210)$ $ = P (-0.4671 \leq Z \leq 0.1789)$\\
+    	$P(X \leq 197$ ou $X \geq 210)$ $ = 1 - 0.18082 - 0.07142 = 0.74776$
+    \end{center}
+    
+    \textbf {E.b} 
+    \\ \\
+    \textit {Resposta:} \\	
+        
+    Agora, queremos saber o evento em que o X se manteve dentro da produção, ou seja, $P (197 < X < 210)$, contudo, com $\mu = 200$:\\
+    
+    \begin{center}
+    	$P(197 \leq X \leq 210) = P (\frac {197 - 200}{\sqrt{45^2/5}} \leq Z \leq \frac {210 - 200}{\sqrt{45^2/5}})$\\
+    	$P(197 \leq X \leq 210) = P (-0.1491 \leq Z \leq 0.4969)$\\
+    	$P(197 \leq X \leq 210) = 0.05962 + 0.19146 = 0.25108$
+    \end{center}
+
+
+
+\end{document}

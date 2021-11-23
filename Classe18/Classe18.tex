@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+	
+	\title{Classe 18 - MAE0119}
+	\author{Daniel Yoshio Hotta – 9922700}
+	
+	\maketitle	
+	
+	Enviado termo geral.\\
+	
+	\textbf {E.a} 
+	\\ \\
+	\textit {Resposta:} \\
+    
+    Temos que calcular a área central da distribuição Normal, ou seja:\\
+    
+    \begin{center}
+    	$P (135 < Y < 165) = 1 - P (135 < Y) - P (Y < 165) = $\\
+    	$P (135 < Y < 165) = 1 - P (\frac{135 - 150}{23} < Z) - P (Z < \frac{165-150}{23}) = $\\
+    	$P (135 < Y < 165) = 1 - P (-0.6522 < Z) - P (Z < 0.6522) = $\\
+    	$P (135 < Y < 165) = 1 - 0.24215 - 0.24215 = 0.5157$
+    \end{center}
+    
+    \textbf {E.b} 
+    \\ \\
+    \textit {Resposta:} \\	
+        
+    Sabemos que o peso médio de uma amostra aleatória com distribuição Normal ($Y_{16}$)aproxima da seguinte forma $Normal (\mu, \frac{\sigma}{16})$, logo:\\
+    
+    \begin{center}
+    	$P(135 < Y_{16} < 165) = 1 - P (135 < Y_{16}) - P (Y_{16} < 165) = $\\
+    	$P(135 < Y_{16} < 165) = 1 - P (\frac{135 - 150}{\sqrt{23^2 / 16}}< Z) - P (Z < \frac{165 - 150}{\sqrt{23^2 / 16}})$\\
+    	$P(135 < Y_{16} < 165) = 1 - P (-2.6087 < Z) - P(Z < 2.6087)$\\
+    	$P(135 < Y_{16} < 165) = 1 - 49547 - 49547 = 0.00906$
+    \end{center}
+
+    \textbf {E.c} 
+    \\ \\
+    \textit {Resposta:} \\
+    
+    Nesse caso, queremos descobrir o valor de $n$, contudo, precisamos calcular $P (Y_n < 165) = 0.025$ primeiro (Normal é equidistante nesse caso) \\
+    
+    \begin{center}
+    	$P(Y_n < 165) = P (Z < \frac{165 - 150}{\sqrt{23^2 / n}}) = 0.025$
+    	$Z = 0.67$
+    \end{center}
+    
+    Logo, temos:
+    
+    \begin{center}
+    	$\frac{160 - 150}{\sqrt{23^2 / n}} = 0.67$
+    	$15 = 0.67 * \sqrt{23^2 / n}$
+    \end{center}
+
+\end{document}

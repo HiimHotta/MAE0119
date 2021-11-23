@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+	
+	\title{Provinha 09 - MAE0119}
+	\author{Daniel Yoshio Hotta – 9922700}
+	
+	\maketitle	
+	
+	Enviado termo geral.\\
+	
+	\textbf {E.a} 
+	\\ \\
+	\textit {Resposta:} \\
+    
+    Sabemos (pela tabela) que $P(X = 0.5, Y \leq 0) = 1/8 + 3/16 = 5/16$, $P(Y \leq 0) = 1 - 1/16 - 3/16 - 3/16 = 9/16$. \\
+    
+    Portanto, usando a fórmula da Prob condicional, temos:
+    
+    \begin{center}
+    	$P(X = 0.5 | Y \leq 0) = \frac{P(X = 0.5, Y \leq 0)}{P(Y \leq 0)} = \frac{5/16}{9/16} = 5/9$
+    \end{center}
+
+    \textbf {E.b} 
+    \\ \\
+    \textit {Resposta:} \\
+    
+    Para calcular a esperança para somente um das 'variáveis'/'eixos', eu somo os valores no eixo em questão e calculo a esperança como se fosse de uma variável unidimensional.
+    
+    Logo:
+    
+    \begin{center}
+    	$E(X) = (-1/2) * (6/16) + 0 * (6/16) + 1 * (4/16) = 1/16$\\
+    	$E(Y) = -1 * (3/16) + 0 * (6/16) + 1 * (7/16) = 4/16$\\    	
+    \end{center}
+    
+    Para calcular a Covariância, terei que calcular E(XY) para usar a fórmula alternativa (felizmente, tem somente 4 casos não nulos já que 5 deles tem X = 0 ou Y = 0), logo:
+    
+    \begin{center}
+    	$[-1 * (-1/2) * 1/8] + [-1 * 1 * 0] + [1 * (-1/2) * 1/16] + [1 * 1 * 3/16] = 7/32$ 
+    \end{center}
+
+    Logo, a Covariância é dada por:
+    
+    \begin{center}
+    	$Cov(X, Y) = E(XY) - E(X) * E(Y) = 7/32 - (1/16)*(4/16) = 7/32 - 1/64 = 13/64$
+    \end{center}
+
+    \textbf {E.c} 
+    \\ \\
+    \textit {Resposta:} \\
+    
+    X e Y não são independentes, uma vez que a covariância delas é diferente de 0 (exercício b), uma condição necessária para a independência.
+
+\end{document}

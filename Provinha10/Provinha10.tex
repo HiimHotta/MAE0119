@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+	
+	\title{Provinha 10 - MAE0119}
+	\author{Daniel Yoshio Hotta – 9922700}
+	
+	\maketitle	
+	
+	Enviado termo geral.\\
+	
+	\textbf {E.a} 
+	\\ \\
+	\textit {Resposta:} \\
+    
+    Seja $A =$ valor do primeiro dado e $B =$ valor do segundo dado. A variável $X$ seria a quantidade de lançamentos até que distribuição conjunta de $(A, B) = (i, i)$ fosse atingida, enquanto a variável $Y$ seria o número de eventos de $X$ necessários até que os 6 casos fossem alcançados. 
+    
+    \textbf {E.b} 
+    \\ \\
+    \textit {Resposta:} \\
+    
+    Se eu entendi corretamente, seriam meio que a contagem dos fracassos até obtermos um sucesso de algum das variáveis. Uma distribuição geométrica, portanto:
+    
+    \begin{center}
+    	$E(Y) = E(X = (1, 1) + X = (2,2) + ... + X = (6, 6))$
+    \end{center}
+
+    Contudo, $X$ a esperança de $(E(X = (i, i)))$, $i = {1, 2..., 6}$ é uma geométrica, com Esperança 1/p, p = 1/36. Logo, $E(Y) = 6 /36$.
+
+\end{document}

@@ -54,8 +54,57 @@
 		
 	Resultado:  $s^2 = 11.50386$. (Realmente, distante da variância, mas a média também estava distante, então...)\\
 	
-	\textbf {E1.c} 
+	\textbf {E1.c e d} 
 	\\ \\
 	\textit {Resposta:} \\	
+	
+	Código no link : \href{https://github.com/HiimHotta/MAE0119/blob/main/SimulaIC/1c.R}{aqui}.
+	
+	\begin{figure}[h]
+		\caption{Exercício 1c.}
+		\centering % para centralizarmos a figura
+		\includegraphics[width=16cm]{ex1c.png} % leia abaixo
+		\label{figura:ex3p1}
+	\end{figure}
+
+    18/200... Uma quantidade bastante aceitável, já que o correto seria 20/200.
+    
+    \textbf {E2.a} 
+    \\ \\
+    \textit {Resposta:} \\	
+    
+    Código:
+    
+    \begin{center}
+   	    x <- rbinom(1, 100, 0.4)
+    \end{center}
+    
+    Resultado da proporção amostral é 0.41.\\
+    
+    Calculo pela fórmula do erro amostral:
+    
+    \begin{center}
+    	$\epsilon =  z_{\gamma / 2} * \sqrt{\frac{p (1- p)}{n}}$
+    	$\epsilon = 1.96 * \sqrt{\frac{0.24}{100}}$
+    	$\epsilon = 0.09601$
+    \end{center}
+
+     Logo, o intervalo será: $[0.41 - 0.09601, 0.41 + 0.09601]$\\
+     
+    \textbf {E2.b e c} 
+    \\ \\
+    \textit {Resposta:} \\	
+    
+    Código no link : \href{https://github.com/HiimHotta/MAE0119/blob/main/SimulaIC/2b.R}{aqui}.\\
+    
+    \begin{figure}[h]
+    	\caption{Exercício 2b.}
+    	\centering % para centralizarmos a figura
+    	\includegraphics[width=16cm]{2b.png} % leia abaixo
+    	\label{figura:ex3p1}
+    \end{figure}
+    
+    4/200 ... Dessa vez, parece que aumentou bem a margem de erro, pois o esperado seria 10/200...
+    
 	
 	\end{document}

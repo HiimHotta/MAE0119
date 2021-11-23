@@ -2,26 +2,26 @@
 
 library("ggplot2")
 
-eps <- 3.29
+eps <- 0.09601
 
 #initialize vector
 res <- NULL
 
-ic <- c (1, 153.5423, 160.1223, FALSE)
+ic <- c (1, 0.41 - eps, 0.41 + eps, TRUE)
 
 res <- rbind (1, res, ic)
 
 for (i in 2:200){
     
-    x <- rnorm(9, mean = 150, sd = 6)
-    media <- mean (x)
-    if (media - eps < 150 && 150 < media + eps){
+    x <- rbinom(1, 100, 0.4)
+    prop <- x / 100
+    if (prop - eps < 0.4 && 0.4 < prop + eps){
         cruzou <- TRUE
     }
     else{
         cruzou <- FALSE
     }
-    ic <- c (i, media - eps, media + eps, cruzou)
+    ic <- c (i, prop - eps, prop + eps, cruzou)
     res <- rbind (res, ic)
 }
 
@@ -29,7 +29,7 @@ df <- data.frame (i = res[,1],x = res[,2], y = res[,3], cruzou = res[,4])
 
 pd <- position_dodge(0.78)
 
-ggplot(df, aes(x=i, y = 150, group=cruzou, color = cruzou)) +
+ggplot(df, aes(x=i, y = 0.4, group=cruzou, color = cruzou)) +
       #draws the means
       geom_point(position=pd) +
 
